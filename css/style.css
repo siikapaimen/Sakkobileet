@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #FFFDF9;
+	
+}
+
+#vasen {
+    background-color: #FFFDF9;
+    height: 100vh;
+    
+}
+
+#oikea {
+    background-color: #FFFDF9;
+    height: 100vh;
+    
+}
+
+#info {
+    background-color: #FFFFFF;
+    height: 47vh;
+    border: 0.5em solid #F96C2F;
+    border-radius: 1em;
+    width:99%!important;
+}
+
+#top10 {
+    background-color: #FFFFFF;
+    height: 53vh !important;
+    border: 0.5em solid #F96C2F;
+    border-radius: 1em;
+    width:99%!important;
+    margin-top: 0.1em;
+}
+
+
+.item:nth-child(1) {
+    background: #FFFDF9;
+}
+
+.item:nth-child(2) {
+    background: #FFFDF9;
+}
+
+.item:nth-child(3) {
+    background: #FFFDF9;
+}
