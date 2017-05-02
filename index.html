@@ -8,31 +8,72 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
+	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<!--Firebase-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
 
 </head>
 
 <body>
-<h1>NUUSKAMUIKKUSÄÄNI: JAAH.</h1>
-  
+
   
   <div class="row">
   
 	  <!-- <p>iik</p> -->
 	  <div class="col-xs-6 right-side" id="oikea">
-		<h2>Sakkokatto</h2>
-		<h4 id="testi">tähän tulee sakkokattonumero</h4>
-		<button>Muokkaa/kirjoita sakkokatto</button>
+		<div class="col-xs-12" id="info">
+			<h2>Sakkokatto</h2>
+			<h4 id="testi">tähän tulee sakkokattonumero</h4>
+			<button>Muokkaa/kirjoita sakkokatto</button>
+		</div>
+		
+		<div class="col-xs-12" id="top10">
+			<h2>Sakon syöttö</h2>
+			<p>YOLOLOLOLOLOLO</p>
+		</div>
+	  </div>
+	  
+	  <div class="col-xs-1">
 	  </div>
 	  
 	  <div class="col-xs-6 left-side" id="vasen">
-		<h2>Sakon syöttö</h2>
+		<h2>hurppadurppalehtokurppa</h2>
+		<div class="container">
+  <div class="row">
+
+    <!--Otsikko-->
+   <h1>Newsfeed</h1><br>
+   <!--Linkki admin-/uutissivulle-->
+   <a href="newsfeedUser.html">Käyttäjäsivu</a>
+   <!--Viestin lisäys div-->
+   <div class="col-lg-6">
+      <!--Otsikon lisäys-->
+     <input type="text" id="otsikko" placeholder="Otsikko"></input><br><br>
+
+      <!--Viesti lisäys-->
+      <textarea id="viesti" style="width: 250px"></textarea><br>
+      <!--Viestin lähetys nappula-->
+      <button id="submitBtn" onClick="submitClick()" class="btn btn-success ">Lähetä</button>
+    </div>
+    <!--Uutisfeedi container-->
+    <div class="col-lg-6">
+      <h2>Uutiset:</h2>
+      <!--Uutisfeedi div-->
+		<div class="panel panel-warning " id="messages">
+		</div>
+    </div>
+
+  </div>
+</div>
 	  </div>
   
   </div>
   
-  <script>
-	
-  </script>
+  <script src="js/scriptsAdmin.js"></script>
 
 </body>
 </html>

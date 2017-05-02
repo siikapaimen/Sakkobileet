@@ -2,24 +2,38 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #FFFDF9;
+	padding: 1cm;
 	
 }
 
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
 #vasen {
-    background-color: #FFFDF9;
-    height: 100vh;
+    background-color: #FFFFFF;
+    height: 94.5vh;
+	border: 0.5em solid #F96C2F;
+	border-radius: 1em;
+	width:49%!important;
+	margin-left: 0.5em;
+	
     
 }
 
 #oikea {
-    background-color: #FFFDF9;
+    background-color: #FFFFFF;
     height: 100vh;
-    
+
+	
+
 }
 
 #info {
     background-color: #FFFFFF;
-    height: 47vh;
+    height: 40vh;
     border: 0.5em solid #F96C2F;
     border-radius: 1em;
     width:99%!important;
@@ -31,7 +45,111 @@ body {
     border: 0.5em solid #F96C2F;
     border-radius: 1em;
     width:99%!important;
-    margin-top: 0.1em;
+    margin-top: 1em;
+}
+
+
+
+
+#pagecontainer {
+	width: 98%;
+	height: 98%;
+}
+#left {
+	background-color: white;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+#carouselobject {
+	height:100%;
+	width: 100%;
+}
+#right {
+	background-color: white;
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+#messageboard {
+	background-color: white;
+	height: 43%;
+	border: 0.5em solid #F96C2F;
+    border-radius: 1em;
+	margin-bottom:1.5%;
+	padding: 2%;
+}
+
+#viestiotsikko:first-of-type {
+    font-size:20px;
+}
+
+#viestiotsikko {
+	color: red!important;
+	display:inline-block;margin-right:10px;
+	width: 50px;
+	
+  
+}
+
+#viestiketju{
+	display:inline-block;
+	word-break: break-all;
+   
+}
+
+img.middle {
+	vertical-align: middle;
+}
+
+#top7 {
+	background-color: white;
+	height: 44%;
+	border: 0.5em solid #F96C2F;
+    border-radius: 1em;
+	padding: 2%;
+	
+}
+
+#both_top_divs {
+	height: 78%;
+
+}
+
+#top7helsinki {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#top7vantaa {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+
+th, td {
+	border-bottom: 1px solid #D8D8D8;
+	font-weight:lighter;
+	padding:0.3em;
+}
+.progress-bar-grey {
+	color:#000!important;
+	background-color:#cccccc!important;
+	border-radius:15%;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+.progress-bar-orange{
+	color:#fff!important;
+	background-color:#F96C2F!important;
+	height:1.5vh;
+	border-radius:20% 10% 10% 20%;
 }
 
 

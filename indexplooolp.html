@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Infotaulu</title>
+
+    <!-- Bootstrap -->
+	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+
+	<script src="js/scriptsUser.js"></script>
+      
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	  <div class="row">
+		  <div class="col-xs-6 left-side" id="vasen">
+			  <object type="text/html" data="carousel.html" id="carouselobject">
+    		</object>
+		  </div>
+		  
+		  <div class="col-xs-6 right-side" id="oikea">
+			  <div class="col-xs-12" id="info">
+				
+				  <h1>
+				  <img src="logo.svg" width="10%" height="10%" >   Info</h1>
+				  
+			
+				<div id="kokonaisuus">
+				</div>
+			  </div>
+			  <div class="col-xs-12" id="top10">
+			    <h2>TOP7 kuskit</h2>      
+					<table class="table table-condensed" id="kokeilutable"></table>
+					<p><i>(Paras yksittäinen teho viimeisen 30 päivän aikana)</i></p>
+			  </div>
+              
+	  
+	  <!--AJAX POST: https://www.w3schools.com/jquery/ajax_post.asp -->
+	  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
