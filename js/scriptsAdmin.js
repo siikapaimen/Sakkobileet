@@ -55,7 +55,7 @@
 		var uutinen = snap.child("otsikko").val();
     //Lisää viestin ja poistonappulan tauluun
 			$("#messages").prepend("<div class='panel-heading' id='viestiotsikko'>"+uutinen+"</div>" +
-			"<div class='panel-body' id='viestiketju'>" + viesti +"</div><button class='btn btn-danger'  onclick=deleteClick(&quot"+snap.key+"&quot)>Delete</button>");
+			"<div class='panel-body' id='viestiketju'>" + viesti +"</div><button class='btn btn-danger'  onclick=deleteClick(&quot"+snap.key+"&quot)>Delete</button><br>");
       //Lisää poisto nappulan
      // $("#messages").append("<button class='btn btn-danger'  onclick=deleteClick(&quot"+snap.key+"&quot)>Delete</button>");
 		});
