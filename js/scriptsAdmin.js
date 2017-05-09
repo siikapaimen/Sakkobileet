@@ -1,12 +1,13 @@
  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyA8B1aUpZFP69o6AB1w5p5JRAo52vnm0VE",
-    authDomain: "all-rounders-newsfeed.firebaseapp.com",
-    databaseURL: "https://all-rounders-newsfeed.firebaseio.com",
-    storageBucket: "all-rounders-newsfeed.appspot.com",
-    messagingSenderId: "151133491596"
+  var config2 = {
+    apiKey: "AIzaSyByowOf5ApuGMakV8WzFR13OFjC_8MmwxQ",
+    authDomain: "sakko-dd595.firebaseapp.com",
+    databaseURL: "https://sakko-dd595.firebaseio.com",
+    projectId: "sakko-dd595",
+    storageBucket: "sakko-dd595.appspot.com",
+    messagingSenderId: "113575412889"
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config2);
 
   //oma skripti
 
@@ -17,7 +18,7 @@
 
   var provider = new firebase.auth.GoogleAuthProvider();
 
-  function submitClick() {
+  function submitKlick() {
 
   	// tekstin tallennus
 
@@ -35,7 +36,8 @@
         //Viestin sisältö
         viesti: teksti
         });
-
+	$("#otsikko").val('');
+	$("#viesti").val('');
   }
 
   // Viestin poisto
@@ -47,10 +49,10 @@
     location.reload();
 	}
 
-  var rootRef = firebase.database().ref().child('viestit');
+  var rooRef = firebase.database().ref().child('viestit');
 
   //Lisää viestin näkymään
-	rootRef.on('child_added', snap =>
+	rooRef.on('child_added', snap =>
 		{ var viesti = snap.child("viesti").val();
 		var uutinen = snap.child("otsikko").val();
     //Lisää viestin ja poistonappulan tauluun

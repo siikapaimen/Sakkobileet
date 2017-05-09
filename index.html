@@ -87,12 +87,14 @@
 					<!--Viesti lisäys-->
 					<textarea id="viesti" style="width: 250px"></textarea><br>
 					<!--Viestin lähetys nappula-->
-					<button id="submitBtn" onClick="submitClick()" class="btn btn-success ">Lähetä</button>
+					<button id="submitBtn" onClick="submitKlick()" class="btn btn-success ">Lähetä</button>
 					
 					<h2>Uutiset:</h2>
 					
 					<!--Uutisfeedi div-->
-					<div class="panel panel-warning " id="messages"></div>
+					<div class="pre-scrollable">
+						<div class="panel panel-warning " id="messages"></div>
+					</div>
 				</div>
     
 				<!--Uutisfeedi container-->
