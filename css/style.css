@@ -14,7 +14,7 @@ html {
 
 #vasen {
     background-color: #FFFFFF;
-    height: 94.5vh;
+    height: 92.8vh; /*94.5*/
 	border: 0.5em solid #F96C2F;
 	border-radius: 1em;
 	width:49%!important;
@@ -33,7 +33,7 @@ html {
 
 #info {
     background-color: #FFFFFF;
-    height: 40vh;
+    height: 40vh; /**/
     border: 0.5em solid #F96C2F;
     border-radius: 1em;
     width:99%!important;
@@ -41,7 +41,7 @@ html {
 
 #top10 {
     background-color: #FFFFFF;
-    height: 53vh !important;
+    height: 51vh /*53*/!important;
     border: 0.5em solid #F96C2F;
     border-radius: 1em;
     width:99%!important;
