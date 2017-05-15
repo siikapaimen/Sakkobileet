@@ -27,13 +27,13 @@
 	  <div class="col-xs-6 right-side" id="oikea">
 		
 		<div class="col-xs-12" id="info">
-			<br />
+			
 		
 			<div class="col-lg-6">
 				<h2>Aseta sakkokatto</h2>
 				<br />
 				<input type="number" step="0.01" id="sKatto" placeholder="Määrä"></input><br><br>
-				<button id="submitBtn" onClick="submitKattoClick()" class="btn btn-primary ">Päivitä</button>
+				<button id="submitBtn" onClick="submitKattoClick()" class="btn btn-warning ">Päivitä</button>
 				<div id="sakkoKattoTulostus">
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 		
 		<div class="col-xs-12" id="top10">
 			
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<h2>Sakon syöttö</h2>
 				<br />
 				<input type="number" step="0.01" id="sakko" placeholder="Määrä"></input><br><br>
@@ -55,8 +55,8 @@
 					<p>Summa:</p>
 					<br />
 				</div>
-    
-			<button id="reset" onClick="resetClick()" class="btn btn-danger">Nollaa sakot</button>
+			<br />
+			<button id="reset" onClick="resetClick()" class="btn btn-warning">Nollaa sakot</button>
 			<br />
 			
 			<div id="pvm">
@@ -76,16 +76,17 @@
 
 			<div class="row">
 				<!--Otsikko-->
-				<h1>Newsfeed</h1><br>
+				
 				<!--Linkki admin-/uutissivulle-->
 				<!--<a href="newsfeedUser.html">Käyttäjäsivu</a>-->
 				<!--Viestin lisäys div-->
    
 				<div class="col-xs-5">
 					<!--Otsikon lisäys-->
-					<input type="text" id="otsikko" placeholder="Otsikko"></input><br><br>
+					<h1>Uutisen syöttö</h1><br>
+					<!--<input type="text" id="otsikko" placeholder="Otsikko"></input><br><br>-->
 					<!--Viesti lisäys-->
-					<textarea id="viesti" style="width: 250px"></textarea><br>
+					<textarea id="viesti" style="width: 550px; height: 140px" ></textarea><br>
 					<!--Viestin lähetys nappula-->
 					<button id="submitBtn" onClick="submitKlick()" class="btn btn-success ">Lähetä</button>
 					

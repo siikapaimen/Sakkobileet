@@ -25,7 +25,7 @@
   	var firebaseRef = firebase.database().ref();
 
   	var teksti = mainText.value;
-    var otsikko = headText.value;
+    //var otsikko = headText.value;
 	var date = new Date();
 
         //Lisää viestin tieetokantaan
@@ -57,7 +57,7 @@
 		var uutinen = snap.child("otsikko").val();
     //Lisää viestin ja poistonappulan tauluun
 			$("#messages").prepend("<div class='panel-heading' id='viestiotsikko'>"+uutinen+"</div>" +
-			"<div class='panel-body' id='viestiketju'>" + viesti +"</div><button class='btn btn-danger'  onclick=deleteClick(&quot"+snap.key+"&quot)>Delete</button><br>");
+			"<div class='panel-body' id='viestiketju'>" + viesti +"</div><button class='btn btn-warning'  onclick=deleteClick(&quot"+snap.key+"&quot)>Poista</button><br>");
       //Lisää poisto nappulan
      // $("#messages").append("<button class='btn btn-danger'  onclick=deleteClick(&quot"+snap.key+"&quot)>Delete</button>");
 		});
